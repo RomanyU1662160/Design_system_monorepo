@@ -2,38 +2,23 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "doc:generate": {
-      "dependsOn": [
-        "^doc:generate"
-      ],
-      "outputs": [
-        "{projectRoot}/packages/design_system_2/sassdoc"
-      ],
+      "dependsOn": ["^doc:generate"],
+      "outputs": ["{projectRoot}/packages/design_system_2/sassdoc"],
       "cache": true
     },
     "lint:fix": {
-      "dependsOn": [
-        "^lint:fix"
-      ]
+      "dependsOn": ["^lint:fix"]
     },
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/packages/design_system_2/src/lib"
-      ],
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/packages/design_system_2/src/lib"],
       "cache": true
     }
   },
   "defaultBase": "main",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "sharedGlobals": [],
-    "production": [
-      "default"
-    ]
+    "production": ["default"]
   }
 }
