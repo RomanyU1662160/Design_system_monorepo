@@ -1,0 +1,7 @@
+# Ignore artifacts:
+build
+coverage
+sassdoc/**/*.css
+
+# Ignore all HTML files:
+# **/*.html

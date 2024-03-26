@@ -1,0 +1,22 @@
+{
+  "name": "design-system-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build:packages": "lerna run build --scope @design-system/*",
+    "start:packages": "lerna run start --scope @design-system/*",
+    "build:ds": "echo \"Compiling SCSS to css\" && npx lerna run build --scope=\"design_system_2\" --stream && echo \"Compile Design system complete!\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  }
+}
