@@ -1,3 +1,5 @@
 node_modules/
 .log
 lerna-debug.log
+
+.nx/cache
