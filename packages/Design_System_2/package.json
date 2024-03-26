@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "doc:generate": "sassdoc ./src",
+    "doc:generate": "npx sassdoc ./src",
     "stylelint:scss": "npx stylelint \"**/*.scss\" ",
     "stylelint:css": "npx stylelint \"**/*.css\"",
     "lint": "npm run stylelint:scss  && npm run stylelint:css",

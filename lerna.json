@@ -3,5 +3,6 @@
   "version": "0.0.0",
   "packages": ["packages/*", "apps/*"],
   "npmClient": "npm",
-  "stream": true
+  "stream": true,
+  "useNx": true
 }

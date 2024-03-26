@@ -7,7 +7,8 @@
   "scripts": {
     "build:packages": "lerna run build --scope @design-system/*",
     "start:packages": "lerna run start --scope @design-system/*",
-    "build:ds": "echo \"Compiling SCSS to css\" && npx lerna run build --scope=\"design_system_2\" --stream && echo \"Compile Design system complete!\""
+    "build:ds": "echo \"Compiling SCSS to css\" && npx lerna run build --scope=\"design_system_2\" --stream && echo \"Compile Design system complete!\"",
+    "doc:generate": "echo \"generating sass docs in design_system_2/sassdoc \" && npx lerna run doc:generate --scope=\"design_system_2\" --stream && echo \"Sassdoc genrated view sassdoc/index.html \""
   },
   "keywords": [],
   "author": "",
